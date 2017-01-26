@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "git@github.com:jhuntoo/mr-typescript-utils.git",
   "author": "jhuntoo <jonnolee84@gmai.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bignumber.js": "github:jhuntoo/types-bignumber.js"
+  },
+  "dependencies": {
+    "typescript": "^2.1.5"
+  }
 }
