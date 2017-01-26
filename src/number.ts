@@ -1,4 +1,10 @@
 import {BigNumber} from 'bignumber.js';
+import {isDefined} from './object';
+
+export function toNumber(n: BigNumber): number | undefined {
+    return isDefined(n) ? n.toNumber() : undefined;
+}
+
 
 export function sumBy<T>(array: T[], propGetter: (val: T) => BigNumber): BigNumber {
     const sum =
