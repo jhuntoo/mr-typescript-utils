@@ -4,10 +4,10 @@ machine:
 
 test:
   override:
-    npm test
+    - npm test
 
 deployment:
   master:
     branch: master
     commands:
-      npm version patch
+      - npm version patch
