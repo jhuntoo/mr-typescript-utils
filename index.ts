@@ -1,2 +1,2 @@
-export {isDefined} from './src/object'
-export {sumBy} from './src/number'
+export * from './src/object'
+export * from './src/number'
