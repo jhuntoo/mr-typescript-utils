@@ -1,0 +1,8 @@
+{
+  "name": "mr-typescript-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jhuntoo/mr-typescript-utils.git",
+  "author": "jhuntoo <jonnolee84@gmai.com>",
+  "license": "MIT"
+}
