@@ -6,6 +6,6 @@
 !*.md
 !.babelrc
 !.gitignore
-!.travis.yml
+!circle.yml
 !LICENSE
 !.npmignore
