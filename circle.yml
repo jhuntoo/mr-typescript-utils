@@ -10,4 +10,7 @@ deployment:
   master:
     branch: master
     commands:
+      - git config --global user.email "jonathon@mustrace.com"
+      - git config --global user.name "Jonathon Lee"
+      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
       - npm version patch
