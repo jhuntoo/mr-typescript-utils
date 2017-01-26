@@ -1,9 +1,9 @@
 import {BigNumber} from 'bignumber.js';
 
-export function sumBy<T>(array: T[], propGetter: (T) => BigNumber): BigNumber {
-    const sum = array.reduce((a, b) => {
-        return propGetter(a).plus(propGetter(b));
-    }, new BigNumber(0));
+export function sumBy<T>(array: T[], propGetter: (val: T) => BigNumber): BigNumber {
+    const sum =
+        array.map((element: T) => propGetter(element))
+            .reduce((a: BigNumber, b :BigNumber) => a.plus(b), new BigNumber(0));
     return sum;
 }
 
